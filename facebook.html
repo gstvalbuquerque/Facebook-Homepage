@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="facebook.css">
+</head>
+<body>
+    <header>
+        <h1><strong>facebook</strong></h1>
+       
+        <section>
+            <p id="info" class="info"> Email or phone <br>
+                <input type="email" id="email">
+            </p>
+            <p id="info" class="info"> Password <br>
+                <input type="password" id="password">
+            </p>
+            <input type="button" value="Log In" id="login">
+        <nav>
+            <a href="Forgotten account">Forgotten account?</a> 
+        </nav>
+        </section>
+
+    </header>  
+    
+    <main class="main">
+        <div id="fcb1" class="fcb1">
+            <div id="fcb2" class="fcb2">
+                <h2> 
+                Facebook helps you connect and share with the people in your life. 
+                </h2>
+            </div>
+                <img class="img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png" alt width="537" height="195" style>
+        </div>
+        
+        <div class="createacc">
+            
+            <div>
+                <h1 style="font-size: 36px; font-family:Helvetica; color: #333333;margin-bottom: 0;">
+                    <strong>Create an account</strong>
+                </h1>
+                <P style="font-size: 19px;font-family: helvetica ;color: #1D2129; margin-top: 12px;">
+                    It's quick and easy. 
+                </P>
+            </div>
+
+            <div class="reg1">
+                <input type="text" placeholder="First name" id="fname">
+                <input type="text" placeholder="Surname"    id="sname">
+                <input type="text" placeholder="Mobile number or email adress"    id="number">
+                <input type="password" placeholder="New password"    id="npassword">
+            </div>
+
+            <div class="reg2">
+                <p><strong>Birthday</strong></p>
+                <select id="day" name="day">
+                    <option value="day">Day</option>
+                    <script>
+                        for(c = 1; c <= 31; c++){
+                            document.write(`<option value="year">${c}</option>`)
+                        }
+                    </script>
+                </select>
+
+                <select id="month" name="month">
+                    <option value="month">Month</option>
+                    <option value="jan">Jan</option>
+                    <option value="fev">Fev</option>
+                    <option value="mar">Mar</option>
+                    <option value="apr">Apr</option>
+                    <option value="may">May</option>
+                    <option value="jun">Jun</option>
+                    <option value="jul">Jul</option>
+                    <option value="aug">Aug</option>
+                    <option value="sept">Sept</option>
+                    <option value="oct">Oct</option>
+                    <option value="nov">Nov</option>
+                    <option value="dez">Dez</option>
+                </select>
+
+                <select id="year" name="year">
+                    <option value="year">Year</option>
+                    <script>
+                        var d = new Date()
+                        var n = d.getFullYear()
+                        for(i = n; i >= 1905 ; i--){
+                            document.write(`<option value="year">${i}</option>`) 
+                        }
+                    </script> 
+                </select>
+                <br>
+                <p style="margin: 25px 0 10px 0;"><strong>Gender</strong></p>
+                    <input class="gender" type="radio" name="radsex" id="female" checked>
+                    <label id="rad" for="female">Female</label>
+                    <input class="gender" type="radio" name="radsex" id="male">
+                    <label id="rad" for="male">Male</label>
+                    <input class="gender" type="radio" name="radsex" id="custom">
+                    <label id="rad" for="custom">Custom</label>
+            </div>
+            <div class="terms">
+                <p>
+                    By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time. 
+                </p>
+            </div>
+            <div class="buttonsign">
+                <input id="signup" type="button" value="Sign Up">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
